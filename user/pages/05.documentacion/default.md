@@ -1,10 +1,9 @@
 ---
-title: 'Documentación '
+title: 'Estructura de carpetas PHP'
 ---
 
 ![](images%20%282%29.jpg)
 
-#### Estructura de carpetas PHP GRAV
 
 Grav tiene estrucuturas de php que son de mucha importancia donde profundizaremos cada una de ellas y al final indicare si son de importancia o no.
 
