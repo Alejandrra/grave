@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1559605483,
-    'checksum' => '9f590a9cabd47fcbd34ac2ff47b9704a',
+    'timestamp' => 1559796966,
+    'checksum' => 'c276d879861bb6cfca8866eedb5ab900',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -12,6 +12,10 @@ return [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1559605319
+            ],
+            'plugins/email' => [
+                'file' => 'user/config/plugins/email.yaml',
+                'modified' => 1559796966
             ],
             'scheduler' => [
                 'file' => 'user/config/scheduler.yaml',
@@ -31,7 +35,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1559605298
+                'modified' => 1559794114
             ]
         ],
         'system/config' => [
@@ -111,9 +115,9 @@ return [
             ],
             'email' => [
                 'enabled' => true,
-                'from' => NULL,
+                'from' => 'servertsystem@gmail.com',
                 'from_name' => NULL,
-                'to' => NULL,
+                'to' => 'servertsystem@gmail.com',
                 'to_name' => NULL,
                 'queue' => [
                     'enabled' => false,
@@ -122,13 +126,13 @@ return [
                     'flush_time_limit' => 100
                 ],
                 'mailer' => [
-                    'engine' => 'sendmail',
+                    'engine' => 'smtp',
                     'smtp' => [
-                        'server' => 'localhost',
-                        'port' => 25,
-                        'encryption' => 'none',
-                        'user' => '',
-                        'password' => ''
+                        'server' => 'smtp.gmail.com',
+                        'port' => 465,
+                        'encryption' => 'ssl',
+                        'user' => 'servertsystem@gmail.com',
+                        'password' => 'benghy.1219'
                     ],
                     'sendmail' => [
                         'bin' => '/usr/sbin/sendmail -bs'
@@ -706,7 +710,7 @@ node_modules'
                 'override_locale' => false
             ],
             'home' => [
-                'alias' => '/home',
+                'alias' => '/blog',
                 'hide_in_urls' => false
             ],
             'pages' => [
@@ -760,7 +764,7 @@ node_modules'
                 'etag' => false,
                 'vary_accept_encoding' => false,
                 'redirect_default_route' => false,
-                'redirect_default_code' => 302,
+                'redirect_default_code' => '302',
                 'redirect_trailing_slash' => true,
                 'ignore_files' => [
                     0 => '.DS_Store'
@@ -825,7 +829,7 @@ node_modules'
                 ]
             ],
             'errors' => [
-                'display' => true,
+                'display' => 1,
                 'log' => true
             ],
             'log' => [
@@ -857,7 +861,8 @@ node_modules'
                 'allowed_fallback_types' => [
                     
                 ],
-                'auto_metadata_exif' => false
+                'auto_metadata_exif' => false,
+                'upload_limit' => 2097152
             ],
             'session' => [
                 'enabled' => true,
