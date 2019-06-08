@@ -2,9 +2,9 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/data/feed/21232f297a57a5a743894a0e4a801fc3.yaml',
-    'modified' => 1559792897,
+    'modified' => 1560027106,
     'data' => [
-        'last_checked' => 1559792897,
+        'last_checked' => 1560027106,
         'data' => [
             0 => [
                 'title' => 'Grav 1.6 Released!',
@@ -22,7 +22,7 @@ return [
                 'title' => 'All RocketTheme Grav Themes 50% Off for Black Friday',
                 'url' => 'https://getgrav.org/blog/rockettheme-blackfriday-2018',
                 'date' => 1542790800,
-                'nicetime' => '6 months ago'
+                'nicetime' => '7 months ago'
             ],
             3 => [
                 'title' => 'We\'re Moving Chat from Slack to Discord',
